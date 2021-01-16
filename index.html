@@ -7,6 +7,12 @@
 
         <title>Plateform Game</title>
 
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://plateform-game.github.io" />
+        <meta property="og:site_name" content="Plateform-Game" />
+        <meta property="og:keywords" content="GitHub pages,Java,C#,Game,Launcher,One page site" />
+        <meta property="twitter:card" content="summary_large_image" />
+
         <link rel="stylesheet" href="./header.css">
         <script defer async src="./static/js/jquery-3.5.1.min.js"></script>
         <script defer async src="./static/js/download.min.js"></script>
@@ -15,31 +21,28 @@
 
     <body>
         <header class="locked" id="links">
-            <h1 class="header-h1" style="font-family: 'Alfa Slab One';">
-                <a href='#/' onclick="event.preventDefault();window.location.hash='#/';updatePage();" class="header-a">
-                    Plateform Game
+            <div>
+                <h1 class="header-h1" style="font-family: 'Alfa Slab One';">
+                    <a href='#/' onclick="event.preventDefault();window.location.hash='#/';updatePage();"
+                        class="header-a">
+                        Plateform Game
+                    </a>
+                </h1>
+                <h3 style="font-family: 'Google Sans';">
+                    This a game with plateforms (Java) with a launcher (C#) !
+                    <br>
+                    <br>
+                    Powered with GitHub, jQuerry, download.js !
+                    <br>
+                    <br>
+                    You are currently on a one page site !
+                </h3>
+                <a href="#/"
+                    onclick="event.preventDefault();window.location.hash='#/thanks?file=launcher_installer';updatePage();"
+                    class="header-a">
+                    <p style="font-family: 'Google Sans';">Click for download the launcher installer</p>
                 </a>
-            </h1>
-            <h3 style="font-family: 'Google Sans';">
-                This a game with plateforms (Java) with a launcher (C#) !
-            </h3>
-            <!--
-            <select name="lang" id="lang">
-                <option label="Select a language :" disabled>
-                </option>
-                <optgroup label="Language availables :">
-                    <option value="en">
-                        English
-                    </option>
-                    <option value="fr">
-                        Français
-                    </option>
-                </optgroup>
-            </select>
-            -->
-            <a href="#/" onclick="event.preventDefault();window.location.hash='#/thanks?file=launcher_installer';updatePage();" class="header-a">
-                <p style="font-family: 'Google Sans';">Click for download the launcher installer</p>
-            </a>
+            </div>
         </header>
         <div id="content" class="main center">
         </div>

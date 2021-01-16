@@ -15,7 +15,7 @@ const updatePage = function () {
                         Thanks for download !
                     </h2>
                     <p>If download do not start, reload page. <img src="./static/images/reload.gif" width="12"></p>
-                    <a href="" onclick="event.preventDefault();window.location.hash='';updatePage();" class="big-button">Go to home</a>
+                    <a href="#/" onclick="event.preventDefault();window.location.hash='#/';updatePage();" class="big-button">Go to home</a>
                 </div>
             `);
             let x = new XMLHttpRequest();

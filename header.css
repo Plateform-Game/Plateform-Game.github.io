@@ -19,28 +19,29 @@ body {
     background-color: rgb(158, 158, 158);
 }
 
-body > div#content.main.center {
+div#content.main.center {
     margin: auto;
     padding-top: 20px;
     margin-left: 70px;
 }
 
-body > header.locked#links {
+header.locked#links {
     display: flex;
-    height: 100%;
     background-color: rgb(255, 61, 61);
     padding: 15px;
     width: 290px;
     left: -270px;
     position: fixed;
-    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 0 20px 20px 0;
     flex-direction: column;
-    transition: left .5s cubic-bezier(.55, .06, .68, .19);
+    transition: all .5s cubic-bezier(.55, .06, .68, .19);
 }
 
-body > header.locked#links:hover{
+header.locked#links:hover {
     left: 0;
-    transition: left .5s cubic-bezier(.55, .06, .68, .19);
+    transition: all .5s cubic-bezier(.55, .06, .68, .19);
 }
 
 a.big-button {
@@ -62,7 +63,7 @@ a.big-button:hover {
     border-radius: 8px;
 }
 
-body > header.locked#links a.header-a {
+header.locked#links a.header-a {
     display: inline;
     vertical-align: middle;
     color: rgb(255, 177, 61);
